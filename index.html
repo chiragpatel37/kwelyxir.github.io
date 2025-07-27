@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwelyxir™ Wellness</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
@@ -14,21 +16,32 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       color: #5A3D2B;
       text-align: center;
+      padding: 20px;
     }
     img {
-      max-width: 400px;
-      margin-bottom: 60px;
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 40px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 6vw;
       margin: 0;
     }
     p {
-      font-size: 18px;
+      font-size: 4.5vw;
       margin-top: 10px;
+      max-width: 600px;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
     }
   </style>
 </head>

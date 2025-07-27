@@ -78,33 +78,6 @@
       50% { transform: scale(1.04); }
       100% { transform: scale(1); }
     }
-.glow-drip {
-  position: relative;
-  height: 8px;
-  width: 200px;
-  margin: 30px auto 10px;
-  background: linear-gradient(to right, #fbc9a7, #f7a477);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.droplet {
-  width: 10px;
-  height: 10px;
-  background-color: #a86d4f;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px;
-  left: 0;
-  animation: drip 2s infinite linear;
-}
-
-@keyframes drip {
-  0%   { left: 0; top: -8px; opacity: 0.2; }
-  25%  { top: 4px; opacity: 0.5; }
-  50%  { top: 8px; opacity: 1; }
-  100% { left: 100%; top: 8px; opacity: 0; }
-}
 
   </style>
 </head>
@@ -133,14 +106,7 @@
         <h1>Website Under Construction</h1>
     <p>We’re building something beautiful for you…</p>
 
-    <!-- 🌟 Glow Meter Animation START -->
-    <div class="glow-drip">
-  <div class="droplet"></div>
-</div>
-<p style="font-size: 14px; color: #a66c4b;">Glow forming... drop by drop </p>
-
-    <!-- 🌟 Glow Meter Animation END -->
-
+    
     <div class="scroll-down" onclick="document.getElementById('launch').scrollIntoView({ behavior: 'smooth' });">↓</div>
 
 

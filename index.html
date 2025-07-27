@@ -78,44 +78,32 @@
       50% { transform: scale(1.04); }
       100% { transform: scale(1); }
     }
-    .glow-meter {
-  width: 80%;
-  height: 4px;
-  background: linear-gradient(90deg, #ffc6b3, #ffb58a, #e79e6d, #a86d4f);
-  background-size: 200% 100%;
-  animation: glowmove 4s linear infinite;
-  border-radius: 10px;
-  margin: 30px auto;
-  box-shadow: 0 0 12px #ffbb99;
+.glow-drip {
+  position: relative;
+  height: 8px;
+  width: 200px;
+  margin: 30px auto 10px;
+  background: linear-gradient(to right, #fbc9a7, #f7a477);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-@keyframes glowmove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-.glow-circle {
-  width: 100px;
-  height: 100px;
+.droplet {
+  width: 10px;
+  height: 10px;
+  background-color: #a86d4f;
   border-radius: 50%;
-  margin: 20px auto 10px;
-  background: radial-gradient(circle at center, #fff6f0, #ffc6b3, #ffb58a);
-  box-shadow: 0 0 20px #ffb58a, 0 0 40px #fda185, 0 0 60px #e6866e;
-  animation: radiate 3s ease-in-out infinite;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  animation: drip 2s infinite linear;
 }
 
-@keyframes radiate {
-  0% {
-    transform: scale(1);
-    opacity: 0.85;
-  }
-  50% {
-    transform: scale(1.08);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.85;
-  }
+@keyframes drip {
+  0%   { left: 0; top: -8px; opacity: 0.2; }
+  25%  { top: 4px; opacity: 0.5; }
+  50%  { top: 8px; opacity: 1; }
+  100% { left: 100%; top: 8px; opacity: 0; }
 }
 
   </style>
@@ -146,10 +134,10 @@
     <p>We’re building something beautiful for you…</p>
 
     <!-- 🌟 Glow Meter Animation START -->
-    <div class="glow-circle"></div>
-<p style="font-size: 14px; color: #a66c4b; margin-top: 10px;">
-  Your glow is aligning... 🌙✨
-</p>
+    <div class="glow-drip">
+  <div class="droplet"></div>
+</div>
+<p style="font-size: 14px; color: #a66c4b;">Glow forming... drop by drop </p>
 
     <!-- 🌟 Glow Meter Animation END -->
 

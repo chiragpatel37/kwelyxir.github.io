@@ -1,3 +1,6 @@
+# Let's update the user's provided HTML to add the animated guide text + arrow above the button
+
+updated_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +74,12 @@
       p { font-size: 20px; }
       .scroll-down { font-size: 28px; }
     }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+      100% { transform: scale(1); }
+    }
   </style>
 </head>
 <body>
@@ -88,25 +97,41 @@
     <br>
     <p><strong>Rooted in ancient beauty rituals. Refined by Eastern innovation. Created for her.</strong></p>
     <p><em>Coming soon — the world of Kwelyxir.</em></p>
-    
-  
 
-  <a href="skin-check-kwelina-all-buttons.html" style="
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #5A3D2B;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-">
-  Begin Your Glow Journey with Kwelina
-</a>
+    <!-- Kwelina Intro + Button -->
+    <div style="text-align: center; margin-top: 40px;">
+      <h2 style="font-size: 20px; color: #5A3D2B; margin-bottom: 10px;">
+        ✨ Meet Kwelina — Your AI Skin Guide
+      </h2>
+      <p style="font-size: 16px; color: #7A5B45; margin-bottom: 20px;">
+        Discover what your skin truly needs — begin your glow ritual now.
+      </p>
+
+      <a href="skin-check-kwelina-all-buttons.html" style="
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #5A3D2B;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        position: relative;
+        animation: pulse 2s infinite;
+      ">
+        Begin Your Glow Journey with Kwelina
+        <span style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-size: 18px;">👉</span>
+      </a>
+    </div>
 
     <footer style="margin-top: 60px; font-size: 14px; color: #7a5e49; opacity: 0.8;">
-  © 2025 Kwelyxir Wellness. All rights reserved.
-</footer>
+      © 2025 Kwelyxir Wellness. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
+"""
+
+# Save the updated file
+path = "/mnt/data/index-with-kwelina-button.html"
+Path(path).write_text(updated_html)
+path

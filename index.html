@@ -10,7 +10,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #F2F1EE; /* Matte white with a soft warm tint */
+      background-color: #F2F1EE;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
@@ -20,40 +20,31 @@
       color: #5A3D2B;
       text-align: center;
       padding: 20px;
+      overflow-x: hidden;
     }
+
     img {
-      max-width: 80%;
+      max-height: 35vh;
+      width: auto;
       height: auto;
       margin-bottom: 40px;
     }
+
     h1 {
       font-size: 6vw;
       margin: 0;
     }
+
     p {
       font-size: 4.5vw;
       margin-top: 10px;
       max-width: 600px;
     }
-    .launch {
-      margin-top: 40px;
-    }
-    .launch h2 {
-      font-size: 22px;
-      color: #5A3D2B;
-    }
-    .launch p {
-      font-size: 16px;
-      max-width: 600px;
-      margin: auto;
-    }
-    .launch .tagline {
-      margin-top: 15px;
-      font-size: 15px;
-      font-style: italic;
-      color: #7A5A45;
-    }
+
     @media (min-width: 768px) {
+      img {
+        max-height: 280px;
+      }
       h1 {
         font-size: 36px;
       }
@@ -67,10 +58,5 @@
   <img src="logo.png" alt="Kwelyxir Logo">
   <h1>Website Under Construction</h1>
   <p>We’re building something beautiful for you…</p>
-  <div class="launch">
-    <h2>Our Launch Lineup</h2>
-    <p>Facewash | Conditioner | Serum | V Wash | Breast Firming Oil | Moisturizer | Scrub | Hair Oil</p>
-    <p class="tagline">Rooted in ancient beauty rituals. Refined by Eastern innovation. Created for her. Coming soon — the world of Kwelyxir.</p>
-  </div>
 </body>
 </html>

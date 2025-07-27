@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kwelina — Your Skin Guide | Kwelyxir™</title>
+  <style>
+    body {
+      background-color: #f2f1ee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #5a3d2b;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      color: #a66c4b;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      font-size: 16px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    select, input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #5A3D2B;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet <strong>Kwelina</strong></h1>
+  <div class="subtitle">Your personal skin guide from Kwelyxir™</div>
+  <form>
+    <label for="age">Age Group:</label>
+    <select id="age" name="age">
+      <option value="18-25">18–25</option>
+      <option value="26-35">26–35</option>
+      <option value="36-45">36–45</option>
+      <option value="46+">46+</option>
+    </select>
+
+    <label for="skin">Skin Type:</label>
+    <select id="skin" name="skin">
+      <option value="dry">Dry</option>
+      <option value="oily">Oily</option>
+      <option value="combination">Combination</option>
+      <option value="sensitive">Sensitive</option>
+      <option value="normal">Normal</option>
+    </select>
+
+    <label for="area">Area Type:</label>
+    <select id="area" name="area">
+      <option value="urban">Urban</option>
+      <option value="semi-urban">Semi-Urban</option>
+      <option value="rural">Rural</option>
+    </select>
+
+    <label for="concern">Primary Skin Concern:</label>
+    <select id="concern" name="concern">
+      <option value="acne">Acne / Pimples</option>
+      <option value="dullness">Dullness</option>
+      <option value="pigmentation">Pigmentation / Dark Spots</option>
+      <option value="ageing">Ageing / Fine Lines</option>
+      <option value="redness">Sensitive / Redness</option>
+    </select>
+
+    <label for="sun">Sun Exposure Level:</label>
+    <select id="sun" name="sun">
+      <option value="high">Daily exposure (outdoor worker)</option>
+      <option value="medium">Moderate (commute + errands)</option>
+      <option value="low">Minimal (mostly indoor)</option>
+    </select>
+
+    <label for="routine">Current Skincare Routine:</label>
+    <select id="routine" name="routine">
+      <option value="none">No routine</option>
+      <option value="basic">Face wash only</option>
+      <option value="ctm">CTM (Cleanser-Toner-Moisturizer)</option>
+      <option value="advanced">Advanced (serum, masks, sunscreen)</option>
+    </select>
+
+    <label for="makeup">Makeup Usage:</label>
+    <select id="makeup" name="makeup">
+      <option value="never">Never</option>
+      <option value="sometimes">Sometimes (2–3 times a week)</option>
+      <option value="daily">Daily</option>
+    </select>
+
+    <label for="format">Preferred Product Format:</label>
+    <select id="format" name="format">
+      <option value="gel">Gel-based</option>
+      <option value="cream">Cream-based</option>
+      <option value="herbal">Herbal/Ayurvedic</option>
+      <option value="kbeauty">K-beauty inspired</option>
+    </select>
+
+    <input type="submit" value="Get My Recommendation">
+  </form>
+</body>
+</html>

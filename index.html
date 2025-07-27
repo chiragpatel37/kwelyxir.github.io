@@ -78,6 +78,22 @@
       50% { transform: scale(1.04); }
       100% { transform: scale(1); }
     }
+    .glow-meter {
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffc6b3, #ffb58a, #e79e6d, #a86d4f);
+  background-size: 200% 100%;
+  animation: glowmove 4s linear infinite;
+  border-radius: 10px;
+  margin: 30px auto;
+  box-shadow: 0 0 12px #ffbb99;
+}
+
+@keyframes glowmove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
   </style>
 </head>
 <body>

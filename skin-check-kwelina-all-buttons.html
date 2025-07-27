@@ -121,8 +121,87 @@
   <div class="subtitle">Your personal skin guide from Kwelyxir™</div>
 
   <form onsubmit="event.preventDefault(); showModal();">
-    <!-- Your question fields go here -->
-    <!-- Keep existing form inputs untouched -->
+
+    <!-- All original fields restored -->
+    <div class="question">
+      <div class="question-title">Age Group:</div>
+      <div class="button-group">
+        <input type="radio" id="age1" name="age" value="18-25"><label for="age1">18–25</label>
+        <input type="radio" id="age2" name="age" value="26-35"><label for="age2">26–35</label>
+        <input type="radio" id="age3" name="age" value="36-45"><label for="age3">36–45</label>
+        <input type="radio" id="age4" name="age" value="46+"><label for="age4">46+</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Skin Type:</div>
+      <div class="button-group">
+        <input type="radio" id="skin1" name="skin" value="dry"><label for="skin1">Dry</label>
+        <input type="radio" id="skin2" name="skin" value="oily"><label for="skin2">Oily</label>
+        <input type="radio" id="skin3" name="skin" value="combination"><label for="skin3">Combination</label>
+        <input type="radio" id="skin4" name="skin" value="sensitive"><label for="skin4">Sensitive</label>
+        <input type="radio" id="skin5" name="skin" value="normal"><label for="skin5">Normal</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Area Type:</div>
+      <div class="button-group">
+        <input type="radio" id="area1" name="area" value="urban"><label for="area1">Urban</label>
+        <input type="radio" id="area2" name="area" value="semi-urban"><label for="area2">Semi-Urban</label>
+        <input type="radio" id="area3" name="area" value="rural"><label for="area3">Rural</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Primary Skin Concern:</div>
+      <div class="button-group">
+        <input type="radio" id="concern1" name="concern" value="acne"><label for="concern1">Acne</label>
+        <input type="radio" id="concern2" name="concern" value="dullness"><label for="concern2">Dullness</label>
+        <input type="radio" id="concern3" name="concern" value="pigmentation"><label for="concern3">Pigmentation</label>
+        <input type="radio" id="concern4" name="concern" value="ageing"><label for="concern4">Ageing</label>
+        <input type="radio" id="concern5" name="concern" value="redness"><label for="concern5">Redness</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Sun Exposure Level:</div>
+      <div class="button-group">
+        <input type="radio" id="sun1" name="sun" value="high"><label for="sun1">Daily exposure</label>
+        <input type="radio" id="sun2" name="sun" value="medium"><label for="sun2">Moderate</label>
+        <input type="radio" id="sun3" name="sun" value="low"><label for="sun3">Minimal</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Current Skincare Routine:</div>
+      <div class="button-group">
+        <input type="radio" id="routine1" name="routine" value="none"><label for="routine1">None</label>
+        <input type="radio" id="routine2" name="routine" value="basic"><label for="routine2">Face wash only</label>
+        <input type="radio" id="routine3" name="routine" value="ctm"><label for="routine3">CTM</label>
+        <input type="radio" id="routine4" name="routine" value="advanced"><label for="routine4">Advanced</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Makeup Usage:</div>
+      <div class="button-group">
+        <input type="radio" id="makeup1" name="makeup" value="never"><label for="makeup1">Never</label>
+        <input type="radio" id="makeup2" name="makeup" value="sometimes"><label for="makeup2">Sometimes</label>
+        <input type="radio" id="makeup3" name="makeup" value="daily"><label for="makeup3">Daily</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-title">Preferred Product Format:</div>
+      <div class="button-group">
+        <input type="radio" id="format1" name="format" value="gel"><label for="format1">Gel-based</label>
+        <input type="radio" id="format2" name="format" value="cream"><label for="format2">Cream-based</label>
+        <input type="radio" id="format3" name="format" value="herbal"><label for="format3">Herbal/Ayurvedic</label>
+        <input type="radio" id="format4" name="format" value="kbeauty"><label for="format4">K-beauty Inspired</label>
+      </div>
+    </div>
+
     <input type="submit" value="Get My Recommendation" class="submit-button">
   </form>
 
